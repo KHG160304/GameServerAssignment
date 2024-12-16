@@ -23,7 +23,7 @@ void ControlBitFlags()
 		printf("비트 offset: ");
 		scanf_s("%hd", &offset);
 		printf("OFF/ON [0, 1]: ");
-		scanf_s("%d", &flags);
+		scanf_s("%hhd", &flags);
 
 		bitFlags |= (0b00000001 << offset);
 
@@ -53,9 +53,9 @@ void ControlBitFlagsToByteUnit()
 	while (1)
 	{
 		printf("바이트 단위 offset: ");
-		scanf_s("%d", &byteOffset);
+		scanf_s("%hhd", &byteOffset);
 		printf("값 [0~255]: ");
-		scanf_s("%d", &flags);
+		scanf_s("%hhd", &flags);
 
 		bitFlags &= (~(0x000000FF << (byteOffset * 8)));
 		bitFlags |= (flags << (byteOffset * 8));
@@ -71,8 +71,8 @@ void ControlBitFlagsToByteUnit()
 
 int main(void)
 {
-	//PrintBinaryFromDecimal(40);
-	//ControlBitFlags();
-	//ControlBitFlagsToByteUnit();
+	PrintBinaryFromDecimal(40);
+	ControlBitFlags();
+	ControlBitFlagsToByteUnit();
 	return 0;
 }
