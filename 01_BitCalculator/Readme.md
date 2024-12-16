@@ -9,9 +9,7 @@
 PrintBinaryFromDecimal 함수
 
 [in] decimal : unsigned char  
-[out] void
-
-
+[out] void  
 [Description] : 0b00000001 비트 마스크를 이용해서 unsigned char 타입의 decimal 변수에 저장된 값을 1비트씩 화면에 출력합니다.
 
 
@@ -28,9 +26,8 @@ PrintBinaryFromDecimal 함수
 
 ControlBitFlags 함수
 
-[in] void
-[out] void
-
+[in] void  
+[out] void  
 [Description] : 0b00000001 비트 마스크를 이용해서 unsigned short 타입 변수에 비트단위로 정보를 저장할 수 있습니다. 0 ~ 15 번째의 비트 중 선택하여 0 또는 1 값을 세팅할 수 있습니다.
 
 
@@ -50,7 +47,6 @@ ControlBitFlags 함수
 
 ControlBitFlagsToByteUnit 함수
 
-[in] void
-[out] void
-
+[in] void  
+[out] void  
 [Description] : 0x000000FF 비트 마스크를 이용해서 unsigned int 타입 변수에 바이트 단위로 정보를 저장할 수 있습니다. 0 ~ 3 번째의 바이트 중 선택하여 0 ~ 255 까지의 값을 세팅할 수 있습니다.
