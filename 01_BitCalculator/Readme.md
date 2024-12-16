@@ -8,8 +8,9 @@
 
 PrintBinaryFromDecimal 함수
 
-[in] decimal : unsigned char 
+[in] decimal : unsigned char  
 [out] void
+
 
 [Description] : 0b00000001 비트 마스크를 이용해서 unsigned char 타입의 decimal 변수에 저장된 값을 1비트씩 화면에 출력합니다.
 
